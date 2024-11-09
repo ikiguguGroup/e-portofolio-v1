@@ -42,9 +42,18 @@ section {
   align-items: center;
 }
 
+.logo a{
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
 .logo img {
-  width: 40px;
+  height: 30px;
   margin-right: 10px;
+  filter: invert(100%);
 }
 
 .navbar ul {
@@ -193,4 +202,10 @@ section {
 /* Welcome and Contact Sections */
 #welcome, #contact {
   scroll-margin-top: 80px; /* Same adjustment */
+}
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    display: none;
+  }
 }
